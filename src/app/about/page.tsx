@@ -4,7 +4,7 @@ import { Card } from "@/components/ui";
 export default function AboutPage() {
   return (
     <MarketingShell>
-      <div className="mx-auto max-w-3xl px-4 py-16">
+      <section className="mx-auto max-w-3xl px-4 py-16">
         <h1 className="text-4xl font-semibold tracking-tight">About Nutrician</h1>
         <p className="mt-4 text-muted">
           Nutrician is a nutrition operating system: log once, then get a next move. This repository is a production-quality
@@ -33,7 +33,7 @@ export default function AboutPage() {
             tracking should not just tell people what they ate, but help them understand what to do next.
           </p>
         </Card>
-      </div>
+      </section>
     </MarketingShell>
   );
 }

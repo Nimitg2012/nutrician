@@ -24,7 +24,7 @@ export function MarketingShell({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-40 border-b border-white/8 bg-bg/80 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
           <Logo />
-          <nav className="hidden items-center gap-6 text-sm text-muted md:flex">
+          <nav aria-label="Primary" className="hidden items-center gap-6 text-sm text-muted md:flex">
             {LINKS.map((link) => (
               <Link
                 key={link.href}
@@ -46,12 +46,14 @@ export function MarketingShell({ children }: { children: React.ReactNode }) {
             className="rounded-full border border-white/10 px-3 py-1.5 text-sm md:hidden"
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
+            aria-controls="marketing-mobile-nav"
+            aria-label="Open menu"
           >
             Menu
           </button>
         </div>
         {open ? (
-          <div className="border-t border-white/8 px-4 py-3 md:hidden">
+          <nav id="marketing-mobile-nav" aria-label="Mobile" className="border-t border-white/8 px-4 py-3 md:hidden">
             <div className="flex flex-col gap-3 text-sm">
               {LINKS.map((link) => (
                 <Link key={link.href} href={link.href} onClick={() => setOpen(false)}>
@@ -60,7 +62,7 @@ export function MarketingShell({ children }: { children: React.ReactNode }) {
               ))}
               <Button href="/signup">Get started free</Button>
             </div>
-          </div>
+          </nav>
         ) : null}
       </header>
       <main>{children}</main>
@@ -70,30 +72,30 @@ export function MarketingShell({ children }: { children: React.ReactNode }) {
             <Logo />
             <p className="mt-3 text-sm text-muted">Your nutrition on autopilot. Track. Understand. Act.</p>
           </div>
-          <div>
+          <nav aria-label="Product">
             <p className="text-xs font-semibold uppercase tracking-wide text-muted">Product</p>
             <div className="mt-3 flex flex-col gap-2 text-sm">
               <Link href="/features">Features</Link>
               <Link href="/pricing">Pricing</Link>
               <Link href="/how-it-works">How it works</Link>
             </div>
-          </div>
-          <div>
+          </nav>
+          <nav aria-label="Company">
             <p className="text-xs font-semibold uppercase tracking-wide text-muted">Company</p>
             <div className="mt-3 flex flex-col gap-2 text-sm">
               <Link href="/about">About</Link>
               <Link href="/blog">Blog</Link>
               <Link href="/contact">Contact</Link>
             </div>
-          </div>
-          <div>
+          </nav>
+          <nav aria-label="Legal">
             <p className="text-xs font-semibold uppercase tracking-wide text-muted">Legal</p>
             <div className="mt-3 flex flex-col gap-2 text-sm">
               <Link href="/privacy">Privacy</Link>
               <Link href="/terms">Terms</Link>
               <Link href="/faq">FAQ</Link>
             </div>
-          </div>
+          </nav>
         </div>
         <p className="border-t border-white/8 px-4 py-4 text-center text-xs text-muted">
           Demo content. Nutrician is not a medical device.

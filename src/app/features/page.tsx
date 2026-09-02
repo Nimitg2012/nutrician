@@ -31,7 +31,7 @@ const FEATURES = [
 export default function FeaturesPage() {
   return (
     <MarketingShell>
-      <div className="mx-auto max-w-5xl px-4 py-16">
+      <section className="mx-auto max-w-5xl px-4 py-16">
         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">Product</p>
         <h1 className="mt-3 text-4xl font-semibold tracking-tight">Features that decide the next bite</h1>
         <p className="mt-4 max-w-2xl text-muted">
@@ -48,7 +48,7 @@ export default function FeaturesPage() {
         <Button href="/signup" className="mt-10">
           Get started free
         </Button>
-      </div>
+      </section>
     </MarketingShell>
   );
 }

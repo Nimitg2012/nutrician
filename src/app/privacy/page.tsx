@@ -3,7 +3,7 @@ import { MarketingShell } from "@/components/marketing/shell";
 export default function PrivacyPage() {
   return (
     <MarketingShell>
-      <div className="mx-auto max-w-3xl px-4 py-16 text-sm leading-7 text-muted">
+      <section className="mx-auto max-w-3xl px-4 py-16 text-sm leading-7 text-muted">
         <h1 className="text-4xl font-semibold tracking-tight text-ink">Privacy Policy</h1>
         <p className="mt-6">
           This demo stores nutrition data in your browser via local storage. There is no production backend, no payment
@@ -17,7 +17,7 @@ export default function PrivacyPage() {
           AI output is an estimate, not a diagnosis. Do not paste secrets into the coach. HTTPS should be used in any
           hosted deployment.
         </p>
-      </div>
+      </section>
     </MarketingShell>
   );
 }

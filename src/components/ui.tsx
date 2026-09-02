@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export function Logo({ className }: { className?: string }) {
   return (
-    <Link href="/" className={cn("inline-flex items-center gap-2", className)}>
+    <Link href="/" className={cn("inline-flex items-center gap-2", className)} aria-label="Nutrician home">
       <span className="grid h-8 w-8 place-items-center rounded-xl bg-accent text-[#04140b] shadow-[0_0_24px_rgba(61,255,143,0.25)]">
-        <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden>
+        <svg viewBox="0 0 24 24" width="16" height="16" className="h-4 w-4" aria-hidden="true">
           <path fill="currentColor" d="M12 2c.4 4.2 1.6 6.8 4.8 9.2C14.4 14.8 12.8 17 12 22c-.8-5-2.4-7.2-4.8-10.8C10.4 8.8 11.6 6.2 12 2Z" />
         </svg>
       </span>

@@ -1,7 +1,7 @@
 {
   "name": "Nutrician",
   "short_name": "Nutrician",
-  "description": "Your Nutrition on Autopilot. Track. Understand. Act.",
+  "description": "Nutrician is an AI-powered nutrition platform that tracks what you eat, analyzes your nutrition, and helps you know what to do next.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -12,6 +12,18 @@
       "src": "/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
       "purpose": "any"
     }
   ]

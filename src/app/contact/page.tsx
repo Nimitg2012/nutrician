@@ -13,7 +13,7 @@ export default function ContactPage() {
 
   return (
     <MarketingShell>
-      <div className="mx-auto max-w-lg px-4 py-16">
+      <section className="mx-auto max-w-lg px-4 py-16">
         <h1 className="text-4xl font-semibold tracking-tight">Contact</h1>
         <p className="mt-3 text-sm text-muted">This form stays in the browser. Nothing is emailed in the demo.</p>
         <Card className="mt-8 space-y-4">
@@ -47,7 +47,7 @@ export default function ContactPage() {
             </p>
           ) : null}
         </Card>
-      </div>
+      </section>
     </MarketingShell>
   );
 }

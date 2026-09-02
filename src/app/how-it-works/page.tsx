@@ -12,7 +12,7 @@ const STEPS = [
 export default function HowItWorksPage() {
   return (
     <MarketingShell>
-      <div className="mx-auto max-w-4xl px-4 py-16">
+      <section className="mx-auto max-w-4xl px-4 py-16">
         <h1 className="text-4xl font-semibold tracking-tight">How Nutrician works</h1>
         <p className="mt-3 max-w-2xl text-muted">Log → Understand → Predict → Recommend → Adapt → Improve.</p>
         <div className="mt-10 space-y-4">
@@ -31,7 +31,7 @@ export default function HowItWorksPage() {
         <Button href="/signup" className="mt-10">
           See it with demo data
         </Button>
-      </div>
+      </section>
     </MarketingShell>
   );
 }

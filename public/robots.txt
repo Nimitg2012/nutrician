@@ -1,2 +1,22 @@
 User-agent: *
 Allow: /
+Allow: /features
+Allow: /how-it-works
+Allow: /ai-coach
+Allow: /pricing
+Allow: /about
+Allow: /blog
+Allow: /faq
+Allow: /contact
+Allow: /privacy
+Allow: /terms
+
+Disallow: /app
+Disallow: /app/
+Disallow: /login
+Disallow: /signup
+Disallow: /onboarding
+Disallow: /forgot-password
+Disallow: /reset-password
+
+Sitemap: https://nutrician.online/sitemap.xml

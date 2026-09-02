@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function BlogPage() {
   return (
     <MarketingShell>
-      <div className="mx-auto max-w-4xl px-4 py-16">
+      <section className="mx-auto max-w-4xl px-4 py-16">
         <h1 className="text-4xl font-semibold tracking-tight">Journal</h1>
         <p className="mt-3 text-muted">Demo articles on eating, planning, hydration and AI nutrition. Clearly labeled as demo.</p>
         <div className="mt-10 space-y-4">
@@ -22,7 +22,7 @@ export default function BlogPage() {
             </Card>
           ))}
         </div>
-      </div>
+      </section>
     </MarketingShell>
   );
 }

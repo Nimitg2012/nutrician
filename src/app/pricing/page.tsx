@@ -26,7 +26,7 @@ const PLANS = [
 export default function PricingPage() {
   return (
     <MarketingShell>
-      <div className="mx-auto max-w-5xl px-4 py-16">
+      <section className="mx-auto max-w-5xl px-4 py-16">
         <h1 className="text-4xl font-semibold tracking-tight">Pricing</h1>
         <p className="mt-3 max-w-2xl text-muted">
           No payment processing in this build. Premium is a local flag you can toggle from Settings to preview locked
@@ -35,7 +35,7 @@ export default function PricingPage() {
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {PLANS.map((plan) => (
             <Card key={plan.name}>
-              <p className="text-sm text-muted">{plan.name}</p>
+              <h2 className="text-sm text-muted">{plan.name}</h2>
               <p className="mt-1 text-3xl font-semibold">{plan.price}</p>
               <ul className="mt-4 space-y-2 text-sm text-muted">
                 {plan.items.map((item) => (
@@ -48,7 +48,7 @@ export default function PricingPage() {
             </Card>
           ))}
         </div>
-      </div>
+      </section>
     </MarketingShell>
   );
 }

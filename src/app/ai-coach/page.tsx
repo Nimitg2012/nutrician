@@ -13,7 +13,7 @@ const PROMPTS = [
 export default function AiCoachPage() {
   return (
     <MarketingShell>
-      <div className="mx-auto max-w-4xl px-4 py-16">
+      <section className="mx-auto max-w-4xl px-4 py-16">
         <h1 className="text-4xl font-semibold tracking-tight">AI Nutrition Coach</h1>
         <p className="mt-3 max-w-2xl text-muted">
           A conversation that can see remaining calories, protein and hydration. It can suggest meals, generate a plan or
@@ -36,7 +36,7 @@ export default function AiCoachPage() {
         <Button href="/signup" className="mt-8">
           Ask the demo coach
         </Button>
-      </div>
+      </section>
     </MarketingShell>
   );
 }
